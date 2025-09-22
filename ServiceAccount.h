@@ -1,4 +1,7 @@
-//
+//Connor Forystek
+//MCSCI-272-5238
+//September 21, 2025
+
 // Created by Christopher Vaughn
 // Date: 9/15/25
 // Project: 272 Forking & Overloading Exercise
@@ -85,6 +88,15 @@ public:
  * @note Comparison is based solely on account balance
  */
 bool operator==(const ServiceAccount&, const ServiceAccount&);
+
+/**
+ * @brief Less-than operator overload for ServiceAccount objectts
+ * @param lhs Left-hand side ServiceAccount object
+ * @param rhs Right-hand side ServiceAccount object
+ * @return true if left account has less balance than right account, false otherwise
+ * @note Comparison is based solely on account balance
+ */
+bool operator<(const ServiceAccount&, const ServiceAccount&);
 
 /**
  * @brief Greater-than operator overload for ServiceAccount objects

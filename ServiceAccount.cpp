@@ -1,4 +1,8 @@
-//
+
+//Connor Forystek
+//MCSCI-272-5238
+//September 21, 2025
+
 // Created by Christopher Vaughn
 // Date: 9/15/25
 // Project: 272 Forking & Overloading Exercise
@@ -109,6 +113,18 @@ void ServiceAccount::setBalance(double balance) {
  */
 bool operator==(const ServiceAccount& a, const ServiceAccount& b) {
     return a.getBalance() == b.getBalance();
+}
+
+/**
+ * @brief Less than operator implementation
+ * @param a Left-hand ServiceAccount
+ * @param b Right-hand ServiceAccount
+ * @return true if account 'a' has a lesser balance than account 'b', false otherwise
+ *
+ * Note: Comparison is based solely on account balance, not identifier or password
+ */
+bool operator<(const ServiceAccount& a, const ServiceAccount& b) {
+    return a.getBalance() < b.getBalance();
 }
 
 /**

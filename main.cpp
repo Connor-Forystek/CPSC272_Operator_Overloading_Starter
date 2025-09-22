@@ -1,4 +1,7 @@
-//
+//Connor Forystek
+//MCSCI-272-5238
+//September 21, 2025
+
 // Created by Christopher Vaughn
 // Date: 9/15/25
 //Project: 272 Forking & Overloading Exercise
@@ -23,6 +26,19 @@ int main() {
     
     // Create second ServiceAccount with identifier "9098", same password, and same balance $1000.00
     ServiceAccount b("9098", "password", 1000.00);
+
+    // Create third ServiceAccount with identifier "1234", password "password12", and same balance $1000.00
+    ServiceAccount c("1234", "password12", 1000.00);
+
+    // Create third ServiceAccount with identifier "9900", password "password123", and same balance $1000.00
+    ServiceAccount d("9900", "password123", 1000.00);
+
+    // Test less than operator (<) - compares accounts based on balance only
+
+    if (c<d)
+        std::cout << "Account c has less money" << std::endl;
+    else
+        std::cout << "Account d has less money" << std::endl;
 
     // Test equality operator (==) - compares accounts based on balance only
     if (a == b)
